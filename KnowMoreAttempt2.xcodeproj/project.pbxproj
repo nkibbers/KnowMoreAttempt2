@@ -50,6 +50,7 @@
 		8087632E2BEEE54F000BBA73 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		808763302BEEE584000BBA73 /* PlaySetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySetup.swift; sourceTree = "<group>"; };
 		808763322BEEE606000BBA73 /* Mont-HeavyDEMO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mont-HeavyDEMO.otf"; path = "../../../Downloads/mont/Mont-HeavyDEMO.otf"; sourceTree = "<group>"; };
+		808763342BEEEA26000BBA73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +102,7 @@
 		808763032BEEE522000BBA73 /* KnowMoreAttempt2 */ = {
 			isa = PBXGroup;
 			children = (
+				808763342BEEEA26000BBA73 /* Info.plist */,
 				808763042BEEE522000BBA73 /* KnowMoreAttempt2App.swift */,
 				808763062BEEE522000BBA73 /* ContentView.swift */,
 				8087632E2BEEE54F000BBA73 /* HomePage.swift */,
@@ -432,6 +434,7 @@
 				DEVELOPMENT_TEAM = L6Z68Q2USA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KnowMoreAttempt2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -461,6 +464,7 @@
 				DEVELOPMENT_TEAM = L6Z68Q2USA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = KnowMoreAttempt2/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
