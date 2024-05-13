@@ -17,6 +17,9 @@
 		8087632F2BEEE54F000BBA73 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8087632E2BEEE54F000BBA73 /* HomePage.swift */; };
 		808763312BEEE584000BBA73 /* PlaySetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808763302BEEE584000BBA73 /* PlaySetup.swift */; };
 		808763332BEEE606000BBA73 /* Mont-HeavyDEMO.otf in Resources */ = {isa = PBXBuildFile; fileRef = 808763322BEEE606000BBA73 /* Mont-HeavyDEMO.otf */; };
+		D48820322BF1C2100077F593 /* CardDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48820312BF1C2100077F593 /* CardDetailModel.swift */; };
+		D48820342BF1C3880077F593 /* ArchiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48820332BF1C3880077F593 /* ArchiveView.swift */; };
+		D48820362BF1C5A00077F593 /* TriviaCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48820352BF1C5A00077F593 /* TriviaCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,9 @@
 		808763302BEEE584000BBA73 /* PlaySetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySetup.swift; sourceTree = "<group>"; };
 		808763322BEEE606000BBA73 /* Mont-HeavyDEMO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mont-HeavyDEMO.otf"; path = "../../Downloads/mont/Mont-HeavyDEMO.otf"; sourceTree = "<group>"; };
 		808763342BEEEA26000BBA73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D48820312BF1C2100077F593 /* CardDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailModel.swift; sourceTree = "<group>"; };
+		D48820332BF1C3880077F593 /* ArchiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveView.swift; sourceTree = "<group>"; };
+		D48820352BF1C5A00077F593 /* TriviaCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +108,7 @@
 		808763032BEEE522000BBA73 /* KnowMoreAttempt2 */ = {
 			isa = PBXGroup;
 			children = (
+				D48820302BF1C1D00077F593 /* TriviaCard */,
 				808763342BEEEA26000BBA73 /* Info.plist */,
 				808763042BEEE522000BBA73 /* KnowMoreAttempt2App.swift */,
 				808763062BEEE522000BBA73 /* ContentView.swift */,
@@ -136,6 +143,16 @@
 				808763212BEEE524000BBA73 /* KnowMoreAttempt2UITestsLaunchTests.swift */,
 			);
 			path = KnowMoreAttempt2UITests;
+			sourceTree = "<group>";
+		};
+		D48820302BF1C1D00077F593 /* TriviaCard */ = {
+			isa = PBXGroup;
+			children = (
+				D48820312BF1C2100077F593 /* CardDetailModel.swift */,
+				D48820332BF1C3880077F593 /* ArchiveView.swift */,
+				D48820352BF1C5A00077F593 /* TriviaCardView.swift */,
+			);
+			path = TriviaCard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,7 +219,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1520;
 				TargetAttributes = {
 					808763002BEEE522000BBA73 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -269,9 +286,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D48820322BF1C2100077F593 /* CardDetailModel.swift in Sources */,
+				D48820342BF1C3880077F593 /* ArchiveView.swift in Sources */,
 				808763072BEEE522000BBA73 /* ContentView.swift in Sources */,
 				808763312BEEE584000BBA73 /* PlaySetup.swift in Sources */,
 				8087632F2BEEE54F000BBA73 /* HomePage.swift in Sources */,
+				D48820362BF1C5A00077F593 /* TriviaCardView.swift in Sources */,
 				808763052BEEE522000BBA73 /* KnowMoreAttempt2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,6 +333,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -345,6 +366,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -373,6 +395,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -405,6 +428,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

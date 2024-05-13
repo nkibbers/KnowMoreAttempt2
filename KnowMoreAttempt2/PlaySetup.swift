@@ -28,7 +28,7 @@ struct PlaySetup: View {
                             .kerning(-1)
                             .position(x: 120, y: 50)
                     )
-                TextField("Enter Player Name", text: $name)
+                TextField("Enter Name", text: $name)
                     .foregroundColor(.white)
                     .padding()
                     .background(
@@ -50,7 +50,7 @@ struct PlaySetup: View {
                     Text("Difficult").tag(3)
                 }
                 Button("Start Game") {
-                    isPlayButtonPressed = false
+                    isPlayButtonPressed = true
                 }
                 .padding()
                 .background(Color.white)
@@ -63,6 +63,6 @@ struct PlaySetup: View {
 
 struct PlaySetup_Previews: PreviewProvider {
     static var previews: some View {
-        PlaySetup(name: .constant("Player Name"), isPlayButtonPressed: .constant(false), selectedDifficulty: .constant(1))
+        PlaySetup(name: .constant("Player Name"), isPlayButtonPressed: .constant(true), selectedDifficulty: .constant(1))
     }
 }
