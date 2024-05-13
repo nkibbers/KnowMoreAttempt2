@@ -49,7 +49,7 @@
 		808763212BEEE524000BBA73 /* KnowMoreAttempt2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowMoreAttempt2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8087632E2BEEE54F000BBA73 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		808763302BEEE584000BBA73 /* PlaySetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySetup.swift; sourceTree = "<group>"; };
-		808763322BEEE606000BBA73 /* Mont-HeavyDEMO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mont-HeavyDEMO.otf"; path = "../../../Downloads/mont/Mont-HeavyDEMO.otf"; sourceTree = "<group>"; };
+		808763322BEEE606000BBA73 /* Mont-HeavyDEMO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mont-HeavyDEMO.otf"; path = "../../Downloads/mont/Mont-HeavyDEMO.otf"; sourceTree = "<group>"; };
 		808763342BEEEA26000BBA73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

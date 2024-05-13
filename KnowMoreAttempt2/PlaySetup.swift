@@ -28,7 +28,7 @@ struct PlaySetup: View {
                             .kerning(-1)
                             .position(x: 120, y: 50)
                     )
-                TextField("Enter your player name", text: $name)
+                TextField("Enter Player Name", text: $name)
                     .foregroundColor(.white)
                     .padding()
                     .background(
