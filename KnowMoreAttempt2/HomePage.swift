@@ -18,52 +18,63 @@ struct HomeView: View {
     ]
     
     var body: some View {
+        
         ZStack {
             Image("whitebg")
                 .resizable()
                 .ignoresSafeArea()
             
-            LazyVGrid(columns: Array(repeating: GridItem(), count: 2)) {
+            Image("blackbg")
+                .resizable()
+                .frame(width: 300, height: 200)
+                .mask(VStack(spacing: -40) {
+                    Text("know\nmore")
+                        .font(Font.custom("Mont-HeavyDEMO", size: 85))
+                        .foregroundColor(.white)
+                        .kerning(-1)
+                }
+                )
+                .position(x: 130, y: 130)
+            
+            LazyVGrid(columns: Array(repeating: GridItem(), count: 2), spacing: 0) {
                 
-                ZStack {
-                    Image("purplebg")
-                        .resizable()
-                        .frame(width: 200, height: 200)
-                    
                     Button(action: {
                     }) {
-                        Image("greenbg")
-                            .resizable()
-                            .frame(width: 200, height: 200)
-                            .mask(
-                                Text("leader")
-                                    .font(Font.custom("Mont-HeavyDEMO", size: 45))
-                                    .foregroundColor(.white)
-                                    .kerning(-1)
-                            )
-                            .position(x: 100, y: 80)
-                        Image("greenbg")
-                            .resizable()
-                            .frame(width: 200, height: 200)
-                            .mask(
-                                Text("board")
-                                    .font(Font.custom("Mont-HeavyDEMO", size: 45))
-                                    .kerning(-1)
-                                    .position(x: 110, y: 125)
-                            )
+                        ZStack {
+                            Image("purplebg")
+                                .resizable()
+                                .frame(width: 200, height: 200)
+                            Image("greenbg")
+                                .resizable()
+                                .frame(width: 200, height: 200)
+                                .mask(
+                                    Text("leader")
+                                        .font(Font.custom("Mont-HeavyDEMO", size: 45))
+                                        .foregroundColor(.white)
+                                        .kerning(-1)
+                                )
+                                .position(x: 100, y: 80)
+                            Image("greenbg")
+                                .resizable()
+                                .frame(width: 200, height: 200)
+                                .mask(
+                                    Text("board")
+                                        .font(Font.custom("Mont-HeavyDEMO", size: 45))
+                                        .kerning(-1)
+                                        .position(x: 110, y: 125)
+                                )
+                        }
                     }
-                }
                 
-                ZStack {
-                    Image("yellowbg")
-                        .resizable()
-                        .frame(width: 200, height: 200)
-                    
                     Button(action: {
                         isPlayButtonPressed.toggle()
                         print("Button tapped!")
                     }) {
                         ZStack{
+                            Image("yellowbg")
+                                .resizable()
+                                .frame(width: 200, height: 200)
+                            
                             Image("orangebg")
                                 .resizable()
                                 .frame(width: 200, height: 200)
@@ -75,16 +86,15 @@ struct HomeView: View {
                                 )
                         }
                     }
-                }
-                ZStack {
-                    Image("lightbluebg")
-                        .resizable()
-                        .frame(width: 200, height: 200)
-                    
+
                     Button(action: {
             //add action
                     }) {
                         ZStack{
+                            Image("lightbluebg")
+                                .resizable()
+                                .frame(width: 200, height: 200)
+                            
                             Image("tangerinebg")
                                 .resizable()
                                 .frame(width: 200, height: 200)
@@ -96,26 +106,27 @@ struct HomeView: View {
                                 )
                         }
                     }
+                
+                ZStack{
+                    Image("greenbg")
+                        .resizable()
+                        .frame(width: 200, height: 200)
+                }
+                
+                ZStack{
+                    Image("orangebg")
+                        .resizable()
+                        .frame(width: 200, height: 200)
+                }
+                ZStack{
+                    Image("brownbg")
+                        .resizable()
+                        .frame(width: 200, height: 200)
                 }
             }
-            .padding(.top, 100)
-            
-            VStack {
-                Image("blackbg")
-                    .resizable()
-                    .ignoresSafeArea()
-                    .aspectRatio(contentMode: .fill)
-                    .mask(VStack(spacing: -40) {
-                        Text("know\nmore")
-                            .font(Font.custom("Mont-HeavyDEMO", size: 85))
-                            .foregroundColor(.white)
-                            .kerning(-1)
-                    }
-                    )
-                    .position(x: 130, y: 100)
-            }
+            .padding(.top, 240)
         }
-        .sheet(isPresented: $isPlayButtonPressed) {
+        .fullScreenCover(isPresented: $isPlayButtonPressed) {
             PlaySetup(name: $name, isPlayButtonPressed: $isPlayButtonPressed, selectedDifficulty: $selectedDifficulty)
         }
     }
