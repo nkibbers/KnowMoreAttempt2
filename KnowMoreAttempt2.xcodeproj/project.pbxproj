@@ -18,6 +18,7 @@
 		808763312BEEE584000BBA73 /* PlaySetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808763302BEEE584000BBA73 /* PlaySetup.swift */; };
 		A8B3AA0A2BF5B1B9000C8B44 /* Mont-ExtraLightDEMO.otf in Resources */ = {isa = PBXBuildFile; fileRef = A8B3AA082BF5B1B9000C8B44 /* Mont-ExtraLightDEMO.otf */; };
 		A8B3AA0B2BF5B1B9000C8B44 /* Mont-HeavyDEMO.otf in Resources */ = {isa = PBXBuildFile; fileRef = A8B3AA092BF5B1B9000C8B44 /* Mont-HeavyDEMO.otf */; };
+		A8B3AA0D2BF5B7DD000C8B44 /* leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B3AA0C2BF5B7DD000C8B44 /* leaderboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		808763342BEEEA26000BBA73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A8B3AA082BF5B1B9000C8B44 /* Mont-ExtraLightDEMO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mont-ExtraLightDEMO.otf"; path = "../../Downloads/mont/Mont-ExtraLightDEMO.otf"; sourceTree = "<group>"; };
 		A8B3AA092BF5B1B9000C8B44 /* Mont-HeavyDEMO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mont-HeavyDEMO.otf"; path = "../../Downloads/mont/Mont-HeavyDEMO.otf"; sourceTree = "<group>"; };
+		A8B3AA0C2BF5B7DD000C8B44 /* leaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leaderboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				808763302BEEE584000BBA73 /* PlaySetup.swift */,
 				808763082BEEE524000BBA73 /* Assets.xcassets */,
 				8087630A2BEEE524000BBA73 /* Preview Content */,
+				A8B3AA0C2BF5B7DD000C8B44 /* leaderboard.swift */,
 			);
 			path = KnowMoreAttempt2;
 			sourceTree = "<group>";
@@ -277,6 +280,7 @@
 				808763312BEEE584000BBA73 /* PlaySetup.swift in Sources */,
 				8087632F2BEEE54F000BBA73 /* HomePage.swift in Sources */,
 				808763052BEEE522000BBA73 /* KnowMoreAttempt2App.swift in Sources */,
+				A8B3AA0D2BF5B7DD000C8B44 /* leaderboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
