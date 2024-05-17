@@ -24,11 +24,10 @@
 		8087632F2BEEE54F000BBA73 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8087632E2BEEE54F000BBA73 /* WelcomeView.swift */; };
 		A8B3AA0A2BF5B1B9000C8B44 /* Mont-HeavyDEMO.otf in Resources */ = {isa = PBXBuildFile; fileRef = A8B3AA082BF5B1B9000C8B44 /* Mont-HeavyDEMO.otf */; };
 		A8B3AA0B2BF5B1B9000C8B44 /* Mont-ExtraLightDEMO.otf in Resources */ = {isa = PBXBuildFile; fileRef = A8B3AA092BF5B1B9000C8B44 /* Mont-ExtraLightDEMO.otf */; };
-		D4A547092BF6EF0F0080A0D8 /* CardDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A547082BF6EF0F0080A0D8 /* CardDetailModel.swift */; };
-		D4A5470B2BF6EF890080A0D8 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A5470A2BF6EF890080A0D8 /* CardView.swift */; };
-		D4A5470D2BF6EFD50080A0D8 /* ArchiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A5470C2BF6EFD50080A0D8 /* ArchiveView.swift */; };
-		D4A5470F2BF6F0370080A0D8 /* TriviaCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A5470E2BF6F0370080A0D8 /* TriviaCardView.swift */; };
 		D4A547112BF6F0760080A0D8 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A547102BF6F0760080A0D8 /* QuestionView.swift */; };
+		D4D8E4AB2BF72BA100DE6FEF /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D8E4AA2BF72BA100DE6FEF /* SplashScreen.swift */; };
+		D4D8E4AD2BF72BE200DE6FEF /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D8E4AC2BF72BE200DE6FEF /* CardData.swift */; };
+		D4D8E4AF2BF72C4200DE6FEF /* ResultCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D8E4AE2BF72C4200DE6FEF /* ResultCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,11 +69,10 @@
 		808763342BEEEA26000BBA73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A8B3AA082BF5B1B9000C8B44 /* Mont-HeavyDEMO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mont-HeavyDEMO.otf"; path = "../../../Downloads/mont/Mont-HeavyDEMO.otf"; sourceTree = "<group>"; };
 		A8B3AA092BF5B1B9000C8B44 /* Mont-ExtraLightDEMO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mont-ExtraLightDEMO.otf"; path = "../../../Downloads/mont/Mont-ExtraLightDEMO.otf"; sourceTree = "<group>"; };
-		D4A547082BF6EF0F0080A0D8 /* CardDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailModel.swift; sourceTree = "<group>"; };
-		D4A5470A2BF6EF890080A0D8 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
-		D4A5470C2BF6EFD50080A0D8 /* ArchiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveView.swift; sourceTree = "<group>"; };
-		D4A5470E2BF6F0370080A0D8 /* TriviaCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaCardView.swift; sourceTree = "<group>"; };
 		D4A547102BF6F0760080A0D8 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		D4D8E4AA2BF72BA100DE6FEF /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		D4D8E4AC2BF72BE200DE6FEF /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
+		D4D8E4AE2BF72C4200DE6FEF /* ResultCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +105,7 @@
 			children = (
 				19B4AA0D2BF6F8B300A1EF3A /* Trivia.swift */,
 				19B4AA0F2BF6F98100A1EF3A /* Answer.swift */,
+				D4D8E4AC2BF72BE200DE6FEF /* CardData.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -125,6 +124,7 @@
 				8087632E2BEEE54F000BBA73 /* WelcomeView.swift */,
 				D4A547102BF6F0760080A0D8 /* QuestionView.swift */,
 				19727E8E2BF72A8200F4B341 /* ResultView.swift */,
+				D4D8E4AA2BF72BA100DE6FEF /* SplashScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -135,6 +135,7 @@
 				19B4AA122BF7009B00A1EF3A /* AnswerField.swift */,
 				19B4AA192BF70DD800A1EF3A /* PrimaryButton.swift */,
 				19B4AA1B2BF70E0100A1EF3A /* ProgressBar.swift */,
+				D4D8E4AE2BF72C4200DE6FEF /* ResultCardView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -166,7 +167,6 @@
 				19B4AA112BF7008800A1EF3A /* Views */,
 				19B4AA0C2BF6F89F00A1EF3A /* ViewModels */,
 				19B4AA092BF6F37C00A1EF3A /* Models */,
-				D4A547072BF6EEA20080A0D8 /* CardViews */,
 				A8B3AA082BF5B1B9000C8B44 /* Mont-HeavyDEMO.otf */,
 				A8B3AA092BF5B1B9000C8B44 /* Mont-ExtraLightDEMO.otf */,
 				808763342BEEEA26000BBA73 /* Info.plist */,
@@ -201,17 +201,6 @@
 				808763212BEEE524000BBA73 /* KnowMoreAttempt2UITestsLaunchTests.swift */,
 			);
 			path = KnowMoreAttempt2UITests;
-			sourceTree = "<group>";
-		};
-		D4A547072BF6EEA20080A0D8 /* CardViews */ = {
-			isa = PBXGroup;
-			children = (
-				D4A547082BF6EF0F0080A0D8 /* CardDetailModel.swift */,
-				D4A5470A2BF6EF890080A0D8 /* CardView.swift */,
-				D4A5470C2BF6EFD50080A0D8 /* ArchiveView.swift */,
-				D4A5470E2BF6F0370080A0D8 /* TriviaCardView.swift */,
-			);
-			path = CardViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,21 +335,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4A5470D2BF6EFD50080A0D8 /* ArchiveView.swift in Sources */,
-				D4A547092BF6EF0F0080A0D8 /* CardDetailModel.swift in Sources */,
 				19B4AA132BF7009B00A1EF3A /* AnswerField.swift in Sources */,
 				19B4AA0B2BF6F39000A1EF3A /* QuizManager.swift in Sources */,
 				19B4AA102BF6F98100A1EF3A /* Answer.swift in Sources */,
 				19727E8F2BF72A8200F4B341 /* ResultView.swift in Sources */,
 				19B4AA1C2BF70E0100A1EF3A /* ProgressBar.swift in Sources */,
 				D4A547112BF6F0760080A0D8 /* QuestionView.swift in Sources */,
+				D4D8E4AB2BF72BA100DE6FEF /* SplashScreen.swift in Sources */,
 				808763072BEEE522000BBA73 /* ContentView.swift in Sources */,
-				D4A5470F2BF6F0370080A0D8 /* TriviaCardView.swift in Sources */,
 				19B4AA0E2BF6F8B300A1EF3A /* Trivia.swift in Sources */,
 				8087632F2BEEE54F000BBA73 /* WelcomeView.swift in Sources */,
 				19B4AA1A2BF70DD800A1EF3A /* PrimaryButton.swift in Sources */,
-				D4A5470B2BF6EF890080A0D8 /* CardView.swift in Sources */,
+				D4D8E4AD2BF72BE200DE6FEF /* CardData.swift in Sources */,
 				808763052BEEE522000BBA73 /* KnowMoreAttempt2App.swift in Sources */,
+				D4D8E4AF2BF72C4200DE6FEF /* ResultCardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,7 +437,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -505,7 +493,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

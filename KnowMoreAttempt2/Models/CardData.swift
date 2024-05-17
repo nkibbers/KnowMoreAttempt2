@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct CardData {
+    let title: String
+    let value: Int
+}
