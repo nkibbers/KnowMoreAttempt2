@@ -11,7 +11,7 @@ import SwiftUI
 struct KnowMoreAttempt2App: App {
     var body: some Scene {
         WindowGroup {
-            QuestionView()
+            WelcomeScreen()
         }
     }
 }

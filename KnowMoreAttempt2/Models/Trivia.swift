@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Question: Decodable {
+struct Trivia: Decodable {
     var results: [Result]
     
     struct Result: Decodable, Identifiable {
