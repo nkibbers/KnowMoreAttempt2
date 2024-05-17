@@ -16,8 +16,8 @@
 		808763222BEEE524000BBA73 /* KnowMoreAttempt2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808763212BEEE524000BBA73 /* KnowMoreAttempt2UITestsLaunchTests.swift */; };
 		8087632F2BEEE54F000BBA73 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8087632E2BEEE54F000BBA73 /* HomePage.swift */; };
 		808763312BEEE584000BBA73 /* PlaySetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808763302BEEE584000BBA73 /* PlaySetup.swift */; };
-		A8B3AA0A2BF5B1B9000C8B44 /* Mont-ExtraLightDEMO.otf in Resources */ = {isa = PBXBuildFile; fileRef = A8B3AA082BF5B1B9000C8B44 /* Mont-ExtraLightDEMO.otf */; };
-		A8B3AA0B2BF5B1B9000C8B44 /* Mont-HeavyDEMO.otf in Resources */ = {isa = PBXBuildFile; fileRef = A8B3AA092BF5B1B9000C8B44 /* Mont-HeavyDEMO.otf */; };
+		A8B3AA0A2BF5B1B9000C8B44 /* Mont-HeavyDEMO.otf in Resources */ = {isa = PBXBuildFile; fileRef = A8B3AA082BF5B1B9000C8B44 /* Mont-HeavyDEMO.otf */; };
+		A8B3AA0B2BF5B1B9000C8B44 /* Mont-ExtraLightDEMO.otf in Resources */ = {isa = PBXBuildFile; fileRef = A8B3AA092BF5B1B9000C8B44 /* Mont-ExtraLightDEMO.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,8 +51,8 @@
 		8087632E2BEEE54F000BBA73 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		808763302BEEE584000BBA73 /* PlaySetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySetup.swift; sourceTree = "<group>"; };
 		808763342BEEEA26000BBA73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		A8B3AA082BF5B1B9000C8B44 /* Mont-ExtraLightDEMO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mont-ExtraLightDEMO.otf"; path = "../../Downloads/mont/Mont-ExtraLightDEMO.otf"; sourceTree = "<group>"; };
-		A8B3AA092BF5B1B9000C8B44 /* Mont-HeavyDEMO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mont-HeavyDEMO.otf"; path = "../../Downloads/mont/Mont-HeavyDEMO.otf"; sourceTree = "<group>"; };
+		A8B3AA082BF5B1B9000C8B44 /* Mont-HeavyDEMO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mont-HeavyDEMO.otf"; path = "../../../Downloads/mont/Mont-HeavyDEMO.otf"; sourceTree = "<group>"; };
+		A8B3AA092BF5B1B9000C8B44 /* Mont-ExtraLightDEMO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mont-ExtraLightDEMO.otf"; path = "../../../Downloads/mont/Mont-ExtraLightDEMO.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +103,8 @@
 		808763032BEEE522000BBA73 /* KnowMoreAttempt2 */ = {
 			isa = PBXGroup;
 			children = (
-				A8B3AA082BF5B1B9000C8B44 /* Mont-ExtraLightDEMO.otf */,
-				A8B3AA092BF5B1B9000C8B44 /* Mont-HeavyDEMO.otf */,
+				A8B3AA082BF5B1B9000C8B44 /* Mont-HeavyDEMO.otf */,
+				A8B3AA092BF5B1B9000C8B44 /* Mont-ExtraLightDEMO.otf */,
 				808763342BEEEA26000BBA73 /* Info.plist */,
 				808763042BEEE522000BBA73 /* KnowMoreAttempt2App.swift */,
 				808763062BEEE522000BBA73 /* ContentView.swift */,
@@ -139,16 +139,6 @@
 				808763212BEEE524000BBA73 /* KnowMoreAttempt2UITestsLaunchTests.swift */,
 			);
 			path = KnowMoreAttempt2UITests;
-			sourceTree = "<group>";
-		};
-		D48820302BF1C1D00077F593 /* TriviaCard */ = {
-			isa = PBXGroup;
-			children = (
-				D48820312BF1C2100077F593 /* CardDetailModel.swift */,
-				D48820332BF1C3880077F593 /* ArchiveView.swift */,
-				D48820352BF1C5A00077F593 /* TriviaCardView.swift */,
-			);
-			path = TriviaCard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +246,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8087630C2BEEE524000BBA73 /* Preview Assets.xcassets in Resources */,
-				A8B3AA0A2BF5B1B9000C8B44 /* Mont-ExtraLightDEMO.otf in Resources */,
-				A8B3AA0B2BF5B1B9000C8B44 /* Mont-HeavyDEMO.otf in Resources */,
+				A8B3AA0A2BF5B1B9000C8B44 /* Mont-HeavyDEMO.otf in Resources */,
+				A8B3AA0B2BF5B1B9000C8B44 /* Mont-ExtraLightDEMO.otf in Resources */,
 				808763092BEEE524000BBA73 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,12 +273,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D48820322BF1C2100077F593 /* CardDetailModel.swift in Sources */,
-				D48820342BF1C3880077F593 /* ArchiveView.swift in Sources */,
 				808763072BEEE522000BBA73 /* ContentView.swift in Sources */,
 				808763312BEEE584000BBA73 /* PlaySetup.swift in Sources */,
 				8087632F2BEEE54F000BBA73 /* HomePage.swift in Sources */,
-				D48820362BF1C5A00077F593 /* TriviaCardView.swift in Sources */,
 				808763052BEEE522000BBA73 /* KnowMoreAttempt2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
