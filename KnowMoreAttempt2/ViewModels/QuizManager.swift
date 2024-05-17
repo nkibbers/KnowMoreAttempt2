@@ -38,7 +38,7 @@ class QuizManager: ObservableObject {
         do {
             let (data, response) = try await URLSession.shared.data(for: urlRequest)
             guard (response as? HTTPURLResponse)?.statusCode == 200 else {
-                fatalError("Bad api call")
+                fatalError("Bad API call")
             }
             
             let decoder = JSONDecoder()
@@ -48,9 +48,10 @@ class QuizManager: ObservableObject {
             DispatchQueue.main.async {
                 self.trivia = decodedData.results
                 self.length = self.trivia.count
+                self.showQuestion()
             }
         } catch {
-            print("Error while fetching questions")
+            print("Error while fetching questions: ")
         }
     }
     

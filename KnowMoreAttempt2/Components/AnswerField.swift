@@ -30,12 +30,10 @@ struct AnswerField: View {
                 if isSelected {
                     Spacer()
                     
-                    if #available(iOS 17.0, *) {
-                        Image(systemName: answer.isCorrect ? "checkmark.circle" : "x.circle")
-                            .foregroundStyle(Color(answer.isCorrect ? green : red))
-                    } else {
-                        // Fallback on earlier versions
-                    }
+                    
+                    Image(systemName: answer.isCorrect ? "checkmark.circle" : "x.circle")
+                        .foregroundStyle(Color(answer.isCorrect ? green : red))
+                    
                 }
             }
             .padding()
