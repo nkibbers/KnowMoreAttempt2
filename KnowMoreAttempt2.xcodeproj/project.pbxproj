@@ -16,9 +16,19 @@
 		808763222BEEE524000BBA73 /* KnowMoreAttempt2UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808763212BEEE524000BBA73 /* KnowMoreAttempt2UITestsLaunchTests.swift */; };
 		8087632F2BEEE54F000BBA73 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8087632E2BEEE54F000BBA73 /* HomePage.swift */; };
 		808763312BEEE584000BBA73 /* PlaySetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808763302BEEE584000BBA73 /* PlaySetup.swift */; };
-		A8B3AA0A2BF5B1B9000C8B44 /* Mont-ExtraLightDEMO.otf in Resources */ = {isa = PBXBuildFile; fileRef = A8B3AA082BF5B1B9000C8B44 /* Mont-ExtraLightDEMO.otf */; };
-		A8B3AA0B2BF5B1B9000C8B44 /* Mont-HeavyDEMO.otf in Resources */ = {isa = PBXBuildFile; fileRef = A8B3AA092BF5B1B9000C8B44 /* Mont-HeavyDEMO.otf */; };
 		A8B3AA0D2BF5B7DD000C8B44 /* leaderboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B3AA0C2BF5B7DD000C8B44 /* leaderboard.swift */; };
+		A8BA9A1B2BF71CD000607896 /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = A8BA9A122BF71CCF00607896 /* License.txt */; };
+		A8BA9A1C2BF71CD000607896 /* Louis George Cafe Bold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8BA9A132BF71CCF00607896 /* Louis George Cafe Bold Italic.ttf */; };
+		A8BA9A1D2BF71CD000607896 /* Louis George Cafe Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8BA9A142BF71CCF00607896 /* Louis George Cafe Bold.ttf */; };
+		A8BA9A1E2BF71CD000607896 /* Louis George Cafe Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8BA9A152BF71CCF00607896 /* Louis George Cafe Italic.ttf */; };
+		A8BA9A1F2BF71CD000607896 /* Louis George Cafe Light Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8BA9A162BF71CCF00607896 /* Louis George Cafe Light Italic.ttf */; };
+		A8BA9A202BF71CD000607896 /* Louis George Cafe Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8BA9A172BF71CCF00607896 /* Louis George Cafe Light.ttf */; };
+		A8BA9A212BF71CD000607896 /* Louis George Café.png in Resources */ = {isa = PBXBuildFile; fileRef = A8BA9A182BF71CCF00607896 /* Louis George Café.png */; };
+		A8BA9A222BF71CD000607896 /* Louis George Cafe.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8BA9A192BF71CCF00607896 /* Louis George Cafe.ttf */; };
+		A8BA9A282BF71CD600607896 /* EULA Free Font License Ver. 2.0.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A8BA9A232BF71CD600607896 /* EULA Free Font License Ver. 2.0.pdf */; };
+		A8BA9A292BF71CD600607896 /* Mont_Specimen.pdf in Resources */ = {isa = PBXBuildFile; fileRef = A8BA9A242BF71CD600607896 /* Mont_Specimen.pdf */; };
+		A8BA9A2A2BF71CD600607896 /* Mont-ExtraLightDEMO.otf in Resources */ = {isa = PBXBuildFile; fileRef = A8BA9A252BF71CD600607896 /* Mont-ExtraLightDEMO.otf */; };
+		A8BA9A2B2BF71CD600607896 /* Mont-HeavyDEMO.otf in Resources */ = {isa = PBXBuildFile; fileRef = A8BA9A262BF71CD600607896 /* Mont-HeavyDEMO.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +62,19 @@
 		8087632E2BEEE54F000BBA73 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		808763302BEEE584000BBA73 /* PlaySetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySetup.swift; sourceTree = "<group>"; };
 		808763342BEEEA26000BBA73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		A8B3AA082BF5B1B9000C8B44 /* Mont-ExtraLightDEMO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mont-ExtraLightDEMO.otf"; path = "../../Downloads/mont/Mont-ExtraLightDEMO.otf"; sourceTree = "<group>"; };
-		A8B3AA092BF5B1B9000C8B44 /* Mont-HeavyDEMO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Mont-HeavyDEMO.otf"; path = "../../Downloads/mont/Mont-HeavyDEMO.otf"; sourceTree = "<group>"; };
 		A8B3AA0C2BF5B7DD000C8B44 /* leaderboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = leaderboard.swift; sourceTree = "<group>"; };
+		A8BA9A122BF71CCF00607896 /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
+		A8BA9A132BF71CCF00607896 /* Louis George Cafe Bold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Louis George Cafe Bold Italic.ttf"; sourceTree = "<group>"; };
+		A8BA9A142BF71CCF00607896 /* Louis George Cafe Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Louis George Cafe Bold.ttf"; sourceTree = "<group>"; };
+		A8BA9A152BF71CCF00607896 /* Louis George Cafe Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Louis George Cafe Italic.ttf"; sourceTree = "<group>"; };
+		A8BA9A162BF71CCF00607896 /* Louis George Cafe Light Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Louis George Cafe Light Italic.ttf"; sourceTree = "<group>"; };
+		A8BA9A172BF71CCF00607896 /* Louis George Cafe Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Louis George Cafe Light.ttf"; sourceTree = "<group>"; };
+		A8BA9A182BF71CCF00607896 /* Louis George Café.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Louis George Café.png"; sourceTree = "<group>"; };
+		A8BA9A192BF71CCF00607896 /* Louis George Cafe.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Louis George Cafe.ttf"; sourceTree = "<group>"; };
+		A8BA9A232BF71CD600607896 /* EULA Free Font License Ver. 2.0.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "EULA Free Font License Ver. 2.0.pdf"; sourceTree = "<group>"; };
+		A8BA9A242BF71CD600607896 /* Mont_Specimen.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Mont_Specimen.pdf; sourceTree = "<group>"; };
+		A8BA9A252BF71CD600607896 /* Mont-ExtraLightDEMO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mont-ExtraLightDEMO.otf"; sourceTree = "<group>"; };
+		A8BA9A262BF71CD600607896 /* Mont-HeavyDEMO.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Mont-HeavyDEMO.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +125,8 @@
 		808763032BEEE522000BBA73 /* KnowMoreAttempt2 */ = {
 			isa = PBXGroup;
 			children = (
-				A8B3AA082BF5B1B9000C8B44 /* Mont-ExtraLightDEMO.otf */,
-				A8B3AA092BF5B1B9000C8B44 /* Mont-HeavyDEMO.otf */,
+				A8BA9A272BF71CD600607896 /* mont */,
+				A8BA9A1A2BF71CCF00607896 /* louis_george_cafe */,
 				808763342BEEEA26000BBA73 /* Info.plist */,
 				808763042BEEE522000BBA73 /* KnowMoreAttempt2App.swift */,
 				808763062BEEE522000BBA73 /* ContentView.swift */,
@@ -144,14 +164,30 @@
 			path = KnowMoreAttempt2UITests;
 			sourceTree = "<group>";
 		};
-		D48820302BF1C1D00077F593 /* TriviaCard */ = {
+		A8BA9A1A2BF71CCF00607896 /* louis_george_cafe */ = {
 			isa = PBXGroup;
 			children = (
-				D48820312BF1C2100077F593 /* CardDetailModel.swift */,
-				D48820332BF1C3880077F593 /* ArchiveView.swift */,
-				D48820352BF1C5A00077F593 /* TriviaCardView.swift */,
+				A8BA9A122BF71CCF00607896 /* License.txt */,
+				A8BA9A132BF71CCF00607896 /* Louis George Cafe Bold Italic.ttf */,
+				A8BA9A142BF71CCF00607896 /* Louis George Cafe Bold.ttf */,
+				A8BA9A152BF71CCF00607896 /* Louis George Cafe Italic.ttf */,
+				A8BA9A162BF71CCF00607896 /* Louis George Cafe Light Italic.ttf */,
+				A8BA9A172BF71CCF00607896 /* Louis George Cafe Light.ttf */,
+				A8BA9A182BF71CCF00607896 /* Louis George Café.png */,
+				A8BA9A192BF71CCF00607896 /* Louis George Cafe.ttf */,
 			);
-			path = TriviaCard;
+			path = louis_george_cafe;
+			sourceTree = "<group>";
+		};
+		A8BA9A272BF71CD600607896 /* mont */ = {
+			isa = PBXGroup;
+			children = (
+				A8BA9A232BF71CD600607896 /* EULA Free Font License Ver. 2.0.pdf */,
+				A8BA9A242BF71CD600607896 /* Mont_Specimen.pdf */,
+				A8BA9A252BF71CD600607896 /* Mont-ExtraLightDEMO.otf */,
+				A8BA9A262BF71CD600607896 /* Mont-HeavyDEMO.otf */,
+			);
+			path = mont;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +295,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				8087630C2BEEE524000BBA73 /* Preview Assets.xcassets in Resources */,
-				A8B3AA0A2BF5B1B9000C8B44 /* Mont-ExtraLightDEMO.otf in Resources */,
-				A8B3AA0B2BF5B1B9000C8B44 /* Mont-HeavyDEMO.otf in Resources */,
+				A8BA9A222BF71CD000607896 /* Louis George Cafe.ttf in Resources */,
+				A8BA9A1B2BF71CD000607896 /* License.txt in Resources */,
+				A8BA9A212BF71CD000607896 /* Louis George Café.png in Resources */,
+				A8BA9A2A2BF71CD600607896 /* Mont-ExtraLightDEMO.otf in Resources */,
+				A8BA9A1E2BF71CD000607896 /* Louis George Cafe Italic.ttf in Resources */,
+				A8BA9A2B2BF71CD600607896 /* Mont-HeavyDEMO.otf in Resources */,
+				A8BA9A1F2BF71CD000607896 /* Louis George Cafe Light Italic.ttf in Resources */,
+				A8BA9A1D2BF71CD000607896 /* Louis George Cafe Bold.ttf in Resources */,
+				A8BA9A202BF71CD000607896 /* Louis George Cafe Light.ttf in Resources */,
+				A8BA9A1C2BF71CD000607896 /* Louis George Cafe Bold Italic.ttf in Resources */,
+				A8BA9A282BF71CD600607896 /* EULA Free Font License Ver. 2.0.pdf in Resources */,
+				A8BA9A292BF71CD600607896 /* Mont_Specimen.pdf in Resources */,
 				808763092BEEE524000BBA73 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,12 +332,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D48820322BF1C2100077F593 /* CardDetailModel.swift in Sources */,
-				D48820342BF1C3880077F593 /* ArchiveView.swift in Sources */,
 				808763072BEEE522000BBA73 /* ContentView.swift in Sources */,
 				808763312BEEE584000BBA73 /* PlaySetup.swift in Sources */,
 				8087632F2BEEE54F000BBA73 /* HomePage.swift in Sources */,
-				D48820362BF1C5A00077F593 /* TriviaCardView.swift in Sources */,
 				808763052BEEE522000BBA73 /* KnowMoreAttempt2App.swift in Sources */,
 				A8B3AA0D2BF5B7DD000C8B44 /* leaderboard.swift in Sources */,
 			);

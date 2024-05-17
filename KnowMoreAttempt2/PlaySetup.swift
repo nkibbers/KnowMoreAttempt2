@@ -26,6 +26,7 @@ struct PlaySetup: View {
                     VStack {
                         TextField("Enter your player name", text: $name)
                             .foregroundColor(Color("KMBlack"))
+                            .font(Font.custom("Louis George Cafe Bold", size: 20))
                             .padding(.horizontal, 20)
                             .background(
                                 Image("lightbluebg")
@@ -56,13 +57,13 @@ struct PlaySetup: View {
                                     Picker(selection: $selectedDifficulty, label: Text("Difficulty"))
                                     {
                                         Text("Easy").tag(1)
-                                            .font(Font.custom("Mont-HeavyDemo", size: 17))
+                                            .font(Font.custom("Louis George Cafe Bold", size: 17))
                                             .foregroundColor(Color("KMBlack"))
                                         Text("Medium").tag(2)
-                                            .font(Font.custom("Mont-HeavyDemo", size: 17))
+                                            .font(Font.custom("Louis George Cafe Bold", size: 17))
                                             .foregroundColor(Color("KMBlack"))
                                         Text("Difficult").tag(3)
-                                            .font(Font.custom("Mont-HeavyDemo", size: 17))
+                                            .font(Font.custom("Louis George Cafe Bold", size: 17))
                                             .foregroundColor(Color("KMBlack"))
                                     }
                                     .pickerStyle(.wheel)
@@ -84,7 +85,7 @@ struct PlaySetup: View {
                                         .resizable()
                                         .frame(width: 200, height: 200)
                                         .mask(
-                                            Text("play")
+                                            Text("start")
                                                 .font(Font.custom("Mont-HeavyDEMO", size: 45))
                                                 .foregroundColor(.white)
                                                 .kerning(-1)

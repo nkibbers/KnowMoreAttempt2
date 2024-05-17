@@ -2,6 +2,12 @@ import SwiftUI
 
 struct leaderboard: View {
     
+    let backgroundImages = ["purplebg", "yellowbg", "lightbluebg", "greenbg", "orangebg", "brownbg", "tangerinebg"]
+    let fontImages = ["greenbg", "orangebg", "tangerinebg", "lightbluebg", "brownbg", "purplebg", "yellowbg"]
+    let players = ["player1", "player2", "player3", "player4", "player5", "player6", "player7"]
+    
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         NavigationView {
             ZStack {
@@ -20,75 +26,48 @@ struct leaderboard: View {
                         )
                     ScrollView {
                         LazyVGrid(columns: Array(repeating: GridItem(), count: 1), spacing: 0) {
-                            
-                            ZStack {
-                                Image("purplebg")
-                                    .resizable()
-                                    .frame(width: .infinity, height: 100)
-                                VStack {
-                                    Image("greenbg")
+                            ForEach(players.indices, id: \.self) { index in
+                                let rank = index + 1
+                                ZStack (alignment: .leading) {
+                                    Image(backgroundImages[index])
                                         .resizable()
-                                        .frame(width: 200, height: 40)
-                                        .mask(
-                                            Text("player1")
-                                                .font(Font.custom("Mont-HeavyDEMO", size: 38))
-                                                .foregroundColor(.white)
-                                                .kerning(-1)
-                                            
+                                        .frame(width: .infinity, height: 100)
+                                    HStack (alignment: .top) {
+                                        Image(fontImages[index])
+                                            .resizable()
+                                            .frame(width: 50, height: 40)
+                                            .mask(
+                                        Text("\(rank)")
+                                            .font(Font.custom("Louis George Cafe Bold", size: 33))
+                                            .kerning(-1)
+                                            .padding(.leading, 10)
                                         )
+                                        Image(fontImages[index])
+                                            .resizable()
+                                            .frame(width: 190, height: 40) // Adjust width to fit rank and player name
+                                            .mask(
+                                                Text(players[index])
+                                                    .font(Font.custom("Louis George Cafe Bold", size: 33))
+                                                    .foregroundColor(.white)
+                                                    .kerning(-1)
+                                            )
+                                    }
+                                
                                 }
                             }
-                            
-                            ZStack{
-                                Image("yellowbg")
-                                    .resizable()
-                                    .frame(width: .infinity, height: 100)
-                                
-                                Image("orangebg")
-                                    .resizable()
-                                    .frame(width: 200, height: 100)
-                                    .mask(
-                                        Text("play")
-                                            .font(Font.custom("Mont-HeavyDEMO", size: 38))
-                                            .foregroundColor(.white)
-                                            .kerning(-1)
-                                    )
-                            }
-                            
-                            ZStack{
-                                Image("lightbluebg")
-                                    .resizable()
-                                    .frame(width: .infinity, height: 100)
-                            }
-                            
-                            ZStack{
-                                Image("greenbg")
-                                    .resizable()
-                                    .frame(width: .infinity, height: 100)
-                            }
-                            
-                            ZStack{
-                                Image("orangebg")
-                                    .resizable()
-                                    .frame(width: .infinity, height: 100)
-                            }
-                            ZStack{
-                                Image("brownbg")
-                                    .resizable()
-                                    .frame(width: .infinity, height: 100)
-                            }
-                                                    .navigationBarBackButtonHidden(true)
-                                                               .navigationBarItems(
-                                                                   leading: Button(action: {
-                                                                   }) {
-                                                                       Image(systemName: "chevron.left")
-                                                                           .foregroundColor(Color("KMBlack"))
-                                                                   }
-                                                               )
                         }
                     }
                 }
             }
+            .navigationBarBackButtonHidden(true)
+            .navigationBarItems(
+                leading: Button(action: {
+                    self.presentationMode.wrappedValue.dismiss()
+                }) {
+                    Image(systemName: "chevron.left")
+                        .foregroundColor(Color("KMBlack"))
+                }
+            )
         }
     }
 }
