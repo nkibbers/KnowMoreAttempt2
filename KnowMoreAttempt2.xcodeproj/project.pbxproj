@@ -11,7 +11,7 @@
 		19B4AA0E2BF6F8B300A1EF3A /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B4AA0D2BF6F8B300A1EF3A /* Question.swift */; };
 		19B4AA102BF6F98100A1EF3A /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B4AA0F2BF6F98100A1EF3A /* Answer.swift */; };
 		19B4AA132BF7009B00A1EF3A /* AnswerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B4AA122BF7009B00A1EF3A /* AnswerView.swift */; };
-		19B4AA152BF70AE400A1EF3A /* TriviaQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B4AA142BF70AE400A1EF3A /* TriviaQuestionView.swift */; };
+		19B4AA182BF70C3E00A1EF3A /* AnswerField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B4AA172BF70C3E00A1EF3A /* AnswerField.swift */; };
 		808763052BEEE522000BBA73 /* KnowMoreAttempt2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808763042BEEE522000BBA73 /* KnowMoreAttempt2App.swift */; };
 		808763072BEEE522000BBA73 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808763062BEEE522000BBA73 /* ContentView.swift */; };
 		808763092BEEE524000BBA73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 808763082BEEE524000BBA73 /* Assets.xcassets */; };
@@ -52,7 +52,7 @@
 		19B4AA0D2BF6F8B300A1EF3A /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		19B4AA0F2BF6F98100A1EF3A /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
 		19B4AA122BF7009B00A1EF3A /* AnswerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerView.swift; sourceTree = "<group>"; };
-		19B4AA142BF70AE400A1EF3A /* TriviaQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaQuestionView.swift; sourceTree = "<group>"; };
+		19B4AA172BF70C3E00A1EF3A /* AnswerField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerField.swift; sourceTree = "<group>"; };
 		808763012BEEE522000BBA73 /* KnowMoreAttempt2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnowMoreAttempt2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		808763042BEEE522000BBA73 /* KnowMoreAttempt2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowMoreAttempt2App.swift; sourceTree = "<group>"; };
 		808763062BEEE522000BBA73 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -126,6 +126,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		19B4AA162BF70C2C00A1EF3A /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				19B4AA172BF70C3E00A1EF3A /* AnswerField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		808762F82BEEE522000BBA73 = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +157,7 @@
 		808763032BEEE522000BBA73 /* KnowMoreAttempt2 */ = {
 			isa = PBXGroup;
 			children = (
+				19B4AA162BF70C2C00A1EF3A /* Components */,
 				19B4AA112BF7008800A1EF3A /* Views */,
 				19B4AA0C2BF6F89F00A1EF3A /* ViewModels */,
 				19B4AA092BF6F37C00A1EF3A /* Models */,
@@ -198,7 +207,6 @@
 				D4A5470A2BF6EF890080A0D8 /* CardView.swift */,
 				D4A5470C2BF6EFD50080A0D8 /* ArchiveView.swift */,
 				D4A5470E2BF6F0370080A0D8 /* TriviaCardView.swift */,
-				19B4AA142BF70AE400A1EF3A /* TriviaQuestionView.swift */,
 			);
 			path = CardViews;
 			sourceTree = "<group>";
@@ -336,8 +344,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4A5470D2BF6EFD50080A0D8 /* ArchiveView.swift in Sources */,
-				19B4AA152BF70AE400A1EF3A /* TriviaQuestionView.swift in Sources */,
 				D4A547092BF6EF0F0080A0D8 /* CardDetailModel.swift in Sources */,
+				19B4AA182BF70C3E00A1EF3A /* AnswerField.swift in Sources */,
 				19B4AA132BF7009B00A1EF3A /* AnswerView.swift in Sources */,
 				19B4AA0B2BF6F39000A1EF3A /* QuizManager.swift in Sources */,
 				19B4AA102BF6F98100A1EF3A /* Answer.swift in Sources */,
