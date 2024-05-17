@@ -14,54 +14,48 @@ struct QuestionView: View {
     @State private var selectedAnswer: String?
     
     var body: some View {
-        ZStack  {
-            Image("whitebg")
-                .resizable()
-                .ignoresSafeArea()
-            
-            VStack {
-                Text(manager.question)
-                    .font(Font.custom("Mont-HeavyDEMO", size: 30))
-                    .foregroundStyle(.kmBlack)
-                    .multilineTextAlignment(.center)
-                    .kerning(-1)
-                    .padding()
-                
-                LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 0), count: 2), spacing: 0) {
-                    ForEach(manager.answerChoices, id: \.id) { answer in
-                        AnswerView(answer: answer)
-                            .environmentObject(manager)
-                            .frame(height: 200)
-                        //                            .background(colorForAnswer(answer))
-                        //                            .border(Color.black, width: 1)
+        VStack(spacing: 40) {
+                    
+                    HStack {
+                        ProgressBar(progressValue: manager.progress)
+                        
+                        Text("\(manager.index + 1) / \(manager.length)")
+                            .font(.system(size: 14))
+                            .fontWeight(.light)
+                            .foregroundStyle(Color(.lightGray))
                     }
-                }
-                
-                HStack {
-                    Button(action: {
-                        // Handle previous action
-                    }) {
-                        Image(systemName: "chevron.left")
-                            .font(.largeTitle)
-                            .foregroundColor(.kmBlack)
+                    
+                    VStack(alignment: .leading, spacing: 20) {
+                        
+                        Text(manager.question)
+                            .font(.system(size: 22))
+                            .foregroundStyle(Color(.black))
+                            .bold()
+                            .multilineTextAlignment(.center)
+                        
+                        ForEach(manager.answerChoices, id: \.id) { answer in
+                            AnswerField(answer: answer)
+                                .environmentObject(manager)
+                        }
                     }
-                    .padding()
                     
                     Spacer()
                     
-                    Button(action: {
-                        // Handle next action
-                    }) {
-                        Image(systemName: "chevron.right")
-                            .font(.largeTitle)
-                            .foregroundColor(.kmBlack)
+                    Button {
+                        manager.nextQuestion()
+                    } label: {
+                        PrimaryButton(text: "Next", background:
+                                        manager.isAnswerSelected ? Color("Green") : Color(hue: 1.0, saturation: 0.0, brightness: 0.564, opacity: 0.327))
                     }
-                    .padding()
+                    .disabled(!manager.isAnswerSelected)
+                    
+                    Spacer()
                 }
-                .padding(.horizontal)
+                .padding()
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                .background(Color("AccentColor"))
+                .navigationBarHidden(true)
             }
-        }
-    }
     
 }
 
