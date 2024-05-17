@@ -61,7 +61,6 @@ struct QuestionView: View {
 
 
 
-
 struct TriviaQuestionView_Previews: PreviewProvider {
     static var previews: some View {
         QuestionView()

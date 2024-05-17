@@ -30,10 +30,8 @@ struct AnswerField: View {
                 if isSelected {
                     Spacer()
                     
-                    
                     Image(systemName: answer.isCorrect ? "checkmark.circle" : "x.circle")
                         .foregroundStyle(Color(answer.isCorrect ? green : red))
-                    
                 }
             }
             .padding()
