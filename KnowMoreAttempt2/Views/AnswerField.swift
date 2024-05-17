@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AnswerField: View {
+struct AnswerButtons: View {
     @EnvironmentObject var manager: QuizzoManager
     var answer: Answer
     
@@ -16,39 +16,45 @@ struct AnswerField: View {
     var red = Color(red: 0.71, green: 0.094, blue: 0.1)
     
     var body: some View {
-        HStack(spacing: 30) {
-            Image(systemName: "circle")
-                .font(.caption)
-            
-            Text(answer.text)
-                .font(.system(size: 18))
-                .foregroundStyle(Color(.black))
-
-                .bold()
-            
-            if isSelected {
-                Spacer()
-                
-                Image(systemName: answer.isCorrect ? "checkmark.circle" : "x.circle")
-                    .foregroundStyle(Color(answer.isCorrect ? green : red))
-            }
-        }
-        .padding()
-        .frame(maxWidth: .infinity, alignment: .leading)
-        .foregroundStyle(Color(manager.answerSelected ? (isSelected ? Color(.lightGray) : .gray): Color(.lightGray)))
-        .background(.white)
-        .cornerRadius(10)
-        .shadow(color: isSelected ? (answer.isCorrect ? green : red) : .gray ,radius: 5)
-        .onTapGesture {
+        Button {
             if !manager.answerSelected {
                 isSelected = true
                 manager.selectedAnswer(answer: answer)
             }
+        } label: {
+            ZStack {
+                Image("yellowbg")
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .frame(maxWidth: .infinity, maxHeight: 200)
+                    .clipped()
+                VStack {
+                    Text(answer.text)
+                        .font(.title3)
+                        .fontWeight(.bold)
+                        .foregroundColor(.white) // Set a default color for safety
+                        .overlay(
+                            Image("orangebg")
+                                .resizable()
+                                .aspectRatio(contentMode: .fill)
+                                .blendMode(.overlay)
+                                .clipped()
+                                .mask(
+                                    Text(answer.text)
+                                        .font(.title3)
+                                        .fontWeight(.bold)
+                                )
+                        )
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .contentShape(Rectangle())
+                    
+                    if isSelected {
+                        Image(systemName: answer.isCorrect ? "checkmark.circle" : "x.circle")
+                            .foregroundStyle(Color(answer.isCorrect ? green : red))
+                    }
+                }
+            }
+            
         }
     }
-}
-
-#Preview {
-    AnswerField(answer: Answer(text: "Question", isCorrect: false))
-        .environmentObject(QuizzoManager())
 }
