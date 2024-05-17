@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import KnowMoreAttempt2
+//@testable import KnowMoreAttempt2
 
 final class KnowMoreAttempt2Tests: XCTestCase {
 
