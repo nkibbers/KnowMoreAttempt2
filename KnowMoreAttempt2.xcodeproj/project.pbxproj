@@ -28,6 +28,7 @@
 		D4D8E4AB2BF72BA100DE6FEF /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D8E4AA2BF72BA100DE6FEF /* SplashScreen.swift */; };
 		D4D8E4AD2BF72BE200DE6FEF /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D8E4AC2BF72BE200DE6FEF /* CardData.swift */; };
 		D4D8E4AF2BF72C4200DE6FEF /* ResultCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D8E4AE2BF72C4200DE6FEF /* ResultCardView.swift */; };
+		D4D8E4B12BF743CC00DE6FEF /* TriviaArchiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4D8E4B02BF743CC00DE6FEF /* TriviaArchiveView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		D4D8E4AA2BF72BA100DE6FEF /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		D4D8E4AC2BF72BE200DE6FEF /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
 		D4D8E4AE2BF72C4200DE6FEF /* ResultCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCardView.swift; sourceTree = "<group>"; };
+		D4D8E4B02BF743CC00DE6FEF /* TriviaArchiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaArchiveView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +127,7 @@
 				D4A547102BF6F0760080A0D8 /* QuestionView.swift */,
 				19727E8E2BF72A8200F4B341 /* ResultView.swift */,
 				D4D8E4AA2BF72BA100DE6FEF /* SplashScreen.swift */,
+				D4D8E4B02BF743CC00DE6FEF /* TriviaArchiveView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 				19B4AA1C2BF70E0100A1EF3A /* ProgressBar.swift in Sources */,
 				D4A547112BF6F0760080A0D8 /* QuestionView.swift in Sources */,
 				D4D8E4AB2BF72BA100DE6FEF /* SplashScreen.swift in Sources */,
+				D4D8E4B12BF743CC00DE6FEF /* TriviaArchiveView.swift in Sources */,
 				808763072BEEE522000BBA73 /* ContentView.swift in Sources */,
 				19B4AA0E2BF6F8B300A1EF3A /* Trivia.swift in Sources */,
 				8087632F2BEEE54F000BBA73 /* WelcomeView.swift in Sources */,

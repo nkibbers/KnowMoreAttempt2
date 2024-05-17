@@ -19,15 +19,19 @@ class QuizzoManager: ObservableObject {
     @Published private(set) var answerChoices: [Answer] = []
     @Published private(set) var progress: CGFloat = 0.0
     @Published private(set) var score = 0
+    @Published var playedQuestions: [Trivia.Result] = []
+    
+    private let userDefaultsKey = "playedQuestions"
     
     init() {
+        loadPlayedQuestions()
         Task.init {
             await fetchQuestion()
         }
     }
     
     func fetchQuestion() async {
-        guard let url = URL(string: "https://opentdb.com/api.php?amount=10")
+        guard let url = URL(string: "https://opentdb.com/api.php?amount=5")
         else { fatalError("Missing URL") }
         
         let urlRequest = URLRequest(url: url)
@@ -46,6 +50,7 @@ class QuizzoManager: ObservableObject {
                 self.trivia = decodedData.results
                 self.length = self.trivia.count
                 self.setQuestion()
+                
             }
         } catch {
             print("Error while fetching questions: \(error)")
@@ -69,6 +74,10 @@ class QuizzoManager: ObservableObject {
             let currentQuestion = trivia[index]
             question = currentQuestion.formattedQuestion
             answerChoices = currentQuestion.answer
+            
+            // Archive the played question
+            playedQuestions.append(currentQuestion)
+            savePlayedQuestions()
         }
     }
     
@@ -78,4 +87,25 @@ class QuizzoManager: ObservableObject {
             score += 1
         }
     }
+    
+    private func savePlayedQuestions() {
+        do {
+            let data = try JSONEncoder().encode(playedQuestions)
+            UserDefaults.standard.set(data, forKey: userDefaultsKey)
+        } catch {
+            print("Unable to save played questions: \(error)")
+        }
+    }
+    
+    private func loadPlayedQuestions() {
+            if let data = UserDefaults.standard.data(forKey: userDefaultsKey) {
+                do {
+                    playedQuestions = try JSONDecoder().decode([Trivia.Result].self, from: data)
+                } catch {
+                    print("Unable to load played questions: \(error)")
+                }
+            }
+        }
+    
+    
 }

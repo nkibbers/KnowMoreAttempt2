@@ -7,10 +7,10 @@
 
 import Foundation
 
-struct Trivia: Decodable {
+struct Trivia: Codable {
     var results: [Result]
     
-    struct Result: Decodable, Identifiable {
+    struct Result: Codable, Identifiable {
         var id: UUID {
             UUID()
         }

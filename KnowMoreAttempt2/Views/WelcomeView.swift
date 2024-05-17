@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct WelcomeScreen: View {
-    @StateObject var quizzoManager =  QuizzoManager()
+    @ObservedObject var quizzoManager =  QuizzoManager()
     
     var body: some View {
         NavigationView {
@@ -29,20 +29,20 @@ struct WelcomeScreen: View {
                         .padding(.top, 50)
                     
                     VStack {
-                        Text("Welcome")
-                            .frame(maxWidth: .infinity, maxHeight: 80)
-                            .foregroundColor(Color("KMBlack"))
-                            .font(Font.custom("Louis George Cafe Bold", size: 20))
-                            .padding(.horizontal, 20)
-                            .background(
-                                Image("lightbluebg")
-                                    .resizable()
-                                    .scaledToFill()
-                                    .mask(
-                                        RoundedRectangle(cornerRadius: 0)
-                                            .frame(width:.infinity, height: 80))
-                            )
-                            .padding(.bottom, 20)
+//                        Text("Welcome")
+//                            .frame(maxWidth: .infinity, maxHeight: 80)
+//                            .foregroundColor(Color("KMBlack"))
+//                            .font(Font.custom("Louis George Cafe Bold", size: 20))
+//                            .padding(.horizontal, 20)
+//                            .background(
+//                                Image("lightbluebg")
+//                                    .resizable()
+//                                    .scaledToFill()
+//                                    .mask(
+//                                        RoundedRectangle(cornerRadius: 0)
+//                                            .frame(width:.infinity, height: 80))
+//                            )
+//                            .padding(.bottom, 20)
                         
                         LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 0), count: 2), spacing: 0) {
                             
@@ -87,9 +87,9 @@ struct WelcomeScreen: View {
                                 
                             }
                             
-                            Button(action: {
-                                //add action
-                            }) {
+                            NavigationLink(destination: TriviaArchiveView(quizzoManager: quizzoManager))
+                            {
+
                                 ZStack{
                                     Image("lightbluebg")
                                         .resizable()
@@ -100,11 +100,12 @@ struct WelcomeScreen: View {
                                         .frame(width: 200, height: 200)
                                         .mask(
                                             Text("archive")
-                                                .font(Font.custom("Mont-HeavyDEMO", size: 40))
+                                                .font(Font.custom("Mont-HeavyDEMO", size: 45))
                                                 .foregroundColor(.white)
                                                 .kerning(-1)
                                         )
                                 }
+                                
                             }
                             
                             ZStack {
