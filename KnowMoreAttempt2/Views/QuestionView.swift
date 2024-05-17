@@ -42,7 +42,7 @@ struct QuestionScreen: View {
                 manager.goToNextQuestion()
             } label: {
                 PrimaryButton(text: "Next", background:
-                                manager.answerSelected ? Color("Green") : Color(hue: 1.0, saturation: 0.0, brightness: 0.564, opacity: 0.327))
+                                manager.answerSelected ? Color(.kmBlack) : Color(hue: 1.0, saturation: 0.0, brightness: 0.564, opacity: 0.327))
             }
             .disabled(!manager.answerSelected)
             
@@ -50,7 +50,7 @@ struct QuestionScreen: View {
         }
         .padding()
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-        .background(Color("AccentColor"))
+        .background(Image("yellowbg"))
         .navigationBarHidden(true)
     }
 }
