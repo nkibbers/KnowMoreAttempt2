@@ -2,17 +2,33 @@
 //  CardDetailModel.swift
 //  KnowMoreAttempt2
 //
-//  Created by Rudra Parikh on 17/5/2024.
+//  Created by Rudra Parikh on 13/5/2024.
 //
 
-import SwiftUI
+import Foundation
 
-struct CardDetailModel: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+struct TriviaCard: Identifiable {
+    let id = UUID()
+    let question: String
+    let correctAnswer: String
 }
 
-#Preview {
-    CardDetailModel()
-}
+
+let sampleTriviaData: [TriviaCard] = [
+    TriviaCard(question: "Question 1", correctAnswer: "Answer 1"),
+    TriviaCard(question: "Question 2", correctAnswer: "Answer 2"),
+    TriviaCard(question: "Question 1", correctAnswer: "Answer 1"),
+    TriviaCard(question: "Question 2", correctAnswer: "Answer 2"),
+    TriviaCard(question: "Question 1", correctAnswer: "Answer 1"),
+    TriviaCard(question: "Question 2", correctAnswer: "Answer 2"),
+    TriviaCard(question: "Question 1", correctAnswer: "Answer 1"),
+    TriviaCard(question: "Question 2", correctAnswer: "Answer 2"),
+    TriviaCard(question: "Question 1", correctAnswer: "Answer 1"),
+    TriviaCard(question: "Question 2", correctAnswer: "Answer 2"),
+    TriviaCard(question: "Question 1", correctAnswer: "Answer 1"),
+    TriviaCard(question: "Question 2", correctAnswer: "Answer 2"),
+    TriviaCard(question: "Question 1", correctAnswer: "Answer 1"),
+    TriviaCard(question: "Question 2", correctAnswer: "Answer 2"),
+    TriviaCard(question: "Question 1", correctAnswer: "Answer 1"),
+    TriviaCard(question: "Question 2", correctAnswer: "Answer 2"),
+]
