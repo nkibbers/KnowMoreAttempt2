@@ -9,8 +9,7 @@ import SwiftUI
 
 struct TriviaArchiveView: View {
     @ObservedObject var quizzoManager: QuizzoManager
-    let colors = ["tangeringbg", "lightbluebg", "yellowbg", "purplebg", "orangebg"]
-    @State var index = 0
+    let colors = ["tangerinebg", "lightbluebg", "yellowbg", "purplebg", "orangebg"]
     
     var body: some View {
         NavigationView {
@@ -31,10 +30,12 @@ struct TriviaArchiveView: View {
                         .padding(.top, 50)
                     
                     ScrollView {
-                        ForEach(quizzoManager.playedQuestions, id: \.id) {question in
+                        ForEach(Array(zip(quizzoManager.playedQuestions, questionColors())), id: \.0.id) { question, color in
                             VStack(alignment: .leading) {
                                 Text(question.formattedQuestion)
-                                    .font(.headline)
+                                    .font(Font.custom("Mont-HeavyDEMO", size: 16))
+                                    .kerning(1.2)
+                                    .lineSpacing(5)
                                     .multilineTextAlignment(.leading)
                                     .frame(maxWidth: .infinity, alignment: .leading)
                                     .padding()
@@ -46,27 +47,22 @@ struct TriviaArchiveView: View {
                                     }
                                 }
                             }
-                            .background(Image(assignColor()).resizable())
+                            .background(Image(color).resizable())
                             .padding(.horizontal, 20.0)
                         }
                     }
                     .frame(width: .infinity)
                 }
-//                .navigationTitle("Archive")
             }
         }
     }
     
-    func assignColor() -> String {
-        if(index < 5) {
-            index = 0
-        } else {
-            index += 1
-        }
-        print(colors[index])
-        return colors[index]
+    func questionColors() -> [String] {
+        let numberOfColors = min(quizzoManager.playedQuestions.count, colors.count)
+        return Array(repeating: colors, count: numberOfColors).flatMap { $0 }
     }
 }
+
 
 
 #Preview {
