@@ -2,7 +2,7 @@
 //  TriviaQuestionView.swift
 //  KnowMoreAttempt2
 //
-//  Created by Rudra Parikh on 16/5/2024.
+//  Created by Ved Ketan Dave on 17/5/2024.
 //
 
 import SwiftUI

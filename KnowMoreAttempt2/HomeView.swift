@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import UIKit
 
 struct HomeView: View {
     @State private var name: String = ""
@@ -131,10 +130,8 @@ struct HomeView: View {
         }
     }
 }
-    #Preview {HomeView()}
-//    struct HomeView_Previews: PreviewProvider {
-//        static var previews: some View {
-//            HomeView()
-//        }
-//    }
+
+#Preview {
+    HomeView()
+}
 
