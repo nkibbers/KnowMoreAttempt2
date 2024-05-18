@@ -14,6 +14,9 @@
 		19B4AA132BF7009B00A1EF3A /* AnswerField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B4AA122BF7009B00A1EF3A /* AnswerField.swift */; };
 		19B4AA1A2BF70DD800A1EF3A /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B4AA192BF70DD800A1EF3A /* PrimaryButton.swift */; };
 		19B4AA1C2BF70E0100A1EF3A /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B4AA1B2BF70E0100A1EF3A /* ProgressBar.swift */; };
+		19E49B972BF89C2400EBE106 /* LeaderboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E49B962BF89C2400EBE106 /* LeaderboardView.swift */; };
+		19E49B9A2BF89CE300EBE106 /* PlayerScoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E49B992BF89CE300EBE106 /* PlayerScoreModel.swift */; };
+		19E49B9C2BF89D3200EBE106 /* HighScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19E49B9B2BF89D3200EBE106 /* HighScoreViewModel.swift */; };
 		808763052BEEE522000BBA73 /* KnowMoreAttempt2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808763042BEEE522000BBA73 /* KnowMoreAttempt2App.swift */; };
 		808763072BEEE522000BBA73 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808763062BEEE522000BBA73 /* ContentView.swift */; };
 		808763092BEEE524000BBA73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 808763082BEEE524000BBA73 /* Assets.xcassets */; };
@@ -56,6 +59,9 @@
 		19B4AA122BF7009B00A1EF3A /* AnswerField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnswerField.swift; path = ../Views/AnswerField.swift; sourceTree = "<group>"; };
 		19B4AA192BF70DD800A1EF3A /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		19B4AA1B2BF70E0100A1EF3A /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
+		19E49B962BF89C2400EBE106 /* LeaderboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderboardView.swift; sourceTree = "<group>"; };
+		19E49B992BF89CE300EBE106 /* PlayerScoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerScoreModel.swift; sourceTree = "<group>"; };
+		19E49B9B2BF89D3200EBE106 /* HighScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreViewModel.swift; sourceTree = "<group>"; };
 		808763012BEEE522000BBA73 /* KnowMoreAttempt2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnowMoreAttempt2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		808763042BEEE522000BBA73 /* KnowMoreAttempt2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowMoreAttempt2App.swift; sourceTree = "<group>"; };
 		808763062BEEE522000BBA73 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -108,6 +114,7 @@
 				19B4AA0D2BF6F8B300A1EF3A /* Trivia.swift */,
 				19B4AA0F2BF6F98100A1EF3A /* Answer.swift */,
 				D4D8E4AC2BF72BE200DE6FEF /* CardData.swift */,
+				19E49B992BF89CE300EBE106 /* PlayerScoreModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -116,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				19B4AA0A2BF6F39000A1EF3A /* QuizManager.swift */,
+				19E49B9B2BF89D3200EBE106 /* HighScoreViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -128,6 +136,7 @@
 				19727E8E2BF72A8200F4B341 /* ResultView.swift */,
 				D4D8E4AA2BF72BA100DE6FEF /* SplashScreen.swift */,
 				D4D8E4B02BF743CC00DE6FEF /* TriviaArchiveView.swift */,
+				19E49B962BF89C2400EBE106 /* LeaderboardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -338,6 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19E49B972BF89C2400EBE106 /* LeaderboardView.swift in Sources */,
 				19B4AA132BF7009B00A1EF3A /* AnswerField.swift in Sources */,
 				19B4AA0B2BF6F39000A1EF3A /* QuizManager.swift in Sources */,
 				19B4AA102BF6F98100A1EF3A /* Answer.swift in Sources */,
@@ -352,7 +362,9 @@
 				19B4AA1A2BF70DD800A1EF3A /* PrimaryButton.swift in Sources */,
 				D4D8E4AD2BF72BE200DE6FEF /* CardData.swift in Sources */,
 				808763052BEEE522000BBA73 /* KnowMoreAttempt2App.swift in Sources */,
+				19E49B9A2BF89CE300EBE106 /* PlayerScoreModel.swift in Sources */,
 				D4D8E4AF2BF72C4200DE6FEF /* ResultCardView.swift in Sources */,
+				19E49B9C2BF89D3200EBE106 /* HighScoreViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
