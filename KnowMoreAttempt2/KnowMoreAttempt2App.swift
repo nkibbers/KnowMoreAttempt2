@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct KnowMoreAttempt2App: App {
+struct KnowMoreAttempt: App {
     var body: some Scene {
         WindowGroup {
             WelcomeScreen(highScoreViewManager: HighScoreViewModel())
