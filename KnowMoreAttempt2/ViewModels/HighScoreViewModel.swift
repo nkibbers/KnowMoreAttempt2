@@ -7,8 +7,6 @@
 
 import Foundation
 
-import Foundation
-
 class HighScoreViewModel: ObservableObject {
     @Published var playerScores: [PlayerScoreModel] = []
     

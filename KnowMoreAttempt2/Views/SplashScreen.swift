@@ -14,7 +14,7 @@ struct SplashScreen: View {
     var body: some View {
         ZStack {
             if self.isActive {
-                WelcomeScreen()
+                WelcomeScreen(highScoreViewManager: HighScoreViewModel())
             } else {
                 
                 Image("Quizzo")

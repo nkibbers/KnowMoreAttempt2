@@ -9,6 +9,8 @@ import SwiftUI
 
 struct WelcomeScreen: View {
     @ObservedObject var quizzoManager =  QuizzoManager()
+    @AppStorage("playerName") private var playerName = ""
+    @ObservedObject var highScoreViewManager: HighScoreViewModel
     
     var body: some View {
         NavigationView {
@@ -29,20 +31,20 @@ struct WelcomeScreen: View {
                         .padding(.top, 50)
                     
                     VStack {
-//                        Text("Welcome")
-//                            .frame(maxWidth: .infinity, maxHeight: 80)
-//                            .foregroundColor(Color("KMBlack"))
-//                            .font(Font.custom("Louis George Cafe Bold", size: 20))
-//                            .padding(.horizontal, 20)
-//                            .background(
-//                                Image("lightbluebg")
-//                                    .resizable()
-//                                    .scaledToFill()
-//                                    .mask(
-//                                        RoundedRectangle(cornerRadius: 0)
-//                                            .frame(width:.infinity, height: 80))
-//                            )
-//                            .padding(.bottom, 20)
+                        TextField("Enter your name here", text: $playerName)
+                            .frame(maxWidth: .infinity, maxHeight: 80)
+                            .foregroundColor(Color("KMBlack"))
+                            .font(Font.custom("Louis George Cafe Bold", size: 20))
+                            .padding(.horizontal, 20)
+                            .background(
+                                Image("lightbluebg")
+                                    .resizable()
+                                    .scaledToFill()
+                                    .mask(
+                                        RoundedRectangle(cornerRadius: 0)
+                                            .frame(width:.infinity, height: 80))
+                            )
+                            .padding(.bottom, 20)
                         
                         LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 0), count: 2), spacing: 0) {
                             
@@ -126,7 +128,7 @@ struct WelcomeScreen: View {
                                         .resizable()
                                         .frame(width: 200, height: 40)
                                         .mask(
-                                            Text("50")
+                                            Text("\(highScoreViewManager.highScore)")
                                                 .font(Font.custom("Louis George Cafe Bold", size: 38))
                                                 .foregroundColor(.white)
                                                 .kerning(-1)
@@ -154,5 +156,5 @@ struct WelcomeScreen: View {
 }
 
 #Preview {
-    WelcomeScreen()
+    WelcomeScreen(highScoreViewManager: HighScoreViewModel())
 }

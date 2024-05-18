@@ -18,10 +18,12 @@ class QuizzoManager: ObservableObject {
     @Published private(set) var question: AttributedString = ""
     @Published private(set) var answerChoices: [Answer] = []
     @Published private(set) var progress: CGFloat = 0.0
-    @Published private(set) var score = 0
+    @Published private(set) var score: Int = 0
     @Published var playedQuestions: [Trivia.Result] = []
     @Published var answerFgColor:  String = ""
     @Published var answerBgColor:  String = ""
+    
+    var scoreManager: HighScoreViewModel = HighScoreViewModel()
     
     private let userDefaultsKey = "playedQuestions"
     
@@ -64,6 +66,7 @@ class QuizzoManager: ObservableObject {
             index += 1
             setQuestion()
         } else {
+            self.scoreManager.saveScore(name: UserDefaults.standard.string(forKey: "playername") ?? "Guest", score: self.score)
             reachedEnd = true
         }
     }

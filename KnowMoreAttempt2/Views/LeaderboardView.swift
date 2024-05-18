@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct leaderboard: View {
+    @ObservedObject var highScoreViewManager: HighScoreViewModel
     
     let backgroundImages = ["purplebg", "yellowbg", "lightbluebg", "greenbg", "orangebg", "brownbg", "tangerinebg"]
     let fontImages = ["greenbg", "orangebg", "tangerinebg", "lightbluebg", "brownbg", "purplebg", "yellowbg"]
-    let players = ["player1", "player2", "player3", "player4", "player5", "player6", "player7"]
     
     @Environment(\.presentationMode) var presentationMode
     
@@ -33,8 +33,8 @@ struct leaderboard: View {
                         )
                     ScrollView {
                         LazyVGrid(columns: Array(repeating: GridItem(), count: 1), spacing: 0) {
-                            ForEach(players.indices, id: \.self) { index in
-                                let rank = index + 1
+                            ForEach(Array(zip(highScoreViewManager.playerScores.sorted { $0.score > $1.score }, 0...6)), id: \.0.id) { player, index in
+//                                let rank = index + 1
                                 ZStack (alignment: .leading) {
                                     Image(backgroundImages[index])
                                         .resizable()
@@ -42,18 +42,18 @@ struct leaderboard: View {
                                     HStack (alignment: .top) {
                                         Image(fontImages[index])
                                             .resizable()
-                                            .frame(width: 50, height: 40)
+                                            .frame(width: 190, height: 40) // Adjust width to fit rank and player name
                                             .mask(
-                                        Text("\(rank)")
-                                            .font(Font.custom("Louis George Cafe Bold", size: 33))
-                                            .kerning(-1)
-                                            .padding(.leading, 10)
-                                        )
-                                        Image(fontImages[index])
+                                                Text(player.name)
+                                                    .font(Font.custom("Louis George Cafe Bold", size: 33))
+                                                    .foregroundColor(.white)
+                                                    .kerning(-1)
+                                            )
+                                        Image(fontImages[0])
                                             .resizable()
                                             .frame(width: 190, height: 40) // Adjust width to fit rank and player name
                                             .mask(
-                                                Text(players[index])
+                                                Text("\(player.score)")
                                                     .font(Font.custom("Louis George Cafe Bold", size: 33))
                                                     .foregroundColor(.white)
                                                     .kerning(-1)
@@ -77,6 +77,11 @@ struct leaderboard: View {
             )
         }
     }
+    
+    func questionColors() -> [String] {
+        let numberOfColors = backgroundImages.count
+        return Array(repeating: backgroundImages, count: numberOfColors).flatMap { $0 }
+    }
 }
 
-#Preview {leaderboard()}
+#Preview {leaderboard(highScoreViewManager: HighScoreViewModel())}
