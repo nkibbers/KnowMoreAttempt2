@@ -11,6 +11,7 @@ struct QuestionScreen: View {
     @EnvironmentObject var manager: QuizzoManager
     let colors = ["yellowbg", "purplebg", "lightbluebg", "orangebg"]
     
+    
     var body: some View {
         ZStack {
             Image("whitebg")
@@ -49,7 +50,6 @@ struct QuestionScreen: View {
                         AnswerButtons(answer: answer)
                             .background(Image(color).resizable())
                             .foregroundStyle(Color(.kmBlack))
-//                            .font
                             .frame(height: 200)
                     }
                 }
@@ -69,12 +69,6 @@ struct QuestionScreen: View {
     func answerChoiceColors() -> [String] {
         let answerCount = manager.answerChoices.count
         return Array(repeating: colors, count: answerCount).flatMap { $0 }
-        
-        
-//        func questionColors() -> [String] {
-//            let numberOfColors = min(quizzoManager.playedQuestions.count, colors.count)
-//            return Array(repeating: colors, count: numberOfColors).flatMap { $0 }
-        
     }
 }
 
