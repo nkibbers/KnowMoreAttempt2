@@ -20,6 +20,8 @@ class QuizzoManager: ObservableObject {
     @Published private(set) var progress: CGFloat = 0.0
     @Published private(set) var score = 0
     @Published var playedQuestions: [Trivia.Result] = []
+    @Published var answerFgColor:  String = ""
+    @Published var answerBgColor:  String = ""
     
     private let userDefaultsKey = "playedQuestions"
     

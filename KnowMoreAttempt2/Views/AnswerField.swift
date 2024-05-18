@@ -23,18 +23,18 @@ struct AnswerButtons: View {
             }
         } label: {
             ZStack {
-                Image("yellowbg")
+                Image(manager.answerBgColor)
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .frame(maxWidth: .infinity, maxHeight: 200)
                     .clipped()
-                VStack {
+                ZStack {
                     Text(answer.text)
                         .font(.title3)
                         .fontWeight(.bold)
-                        .foregroundColor(.white) // Set a default color for safety
+//                        .foregroundColor(.white) // Set a default color for safety
                         .overlay(
-                            Image("orangebg")
+                            Image(manager.answerBgColor)
                                 .resizable()
                                 .aspectRatio(contentMode: .fill)
                                 .blendMode(.overlay)
@@ -50,11 +50,15 @@ struct AnswerButtons: View {
                     
                     if isSelected {
                         Image(systemName: answer.isCorrect ? "checkmark.circle" : "x.circle")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 150, height: 150)
                             .foregroundStyle(Color(answer.isCorrect ? green : red))
-                    }
+                            .opacity(0.4)                    }
                 }
             }
             
         }
     }
 }
+

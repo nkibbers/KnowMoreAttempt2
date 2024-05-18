@@ -33,7 +33,7 @@ struct SplashScreen: View {
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .edgesIgnoringSafeArea(.all)
-        .background(Color("AccentColor"))
+        .background(Color("whitebg"))
     }
 }
 

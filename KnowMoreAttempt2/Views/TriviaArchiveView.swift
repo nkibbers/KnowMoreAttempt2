@@ -27,7 +27,7 @@ struct TriviaArchiveView: View {
                                 .foregroundColor(.white)
                                 .kerning(-1)
                         }
-                        .padding(.top, 50)
+                        .padding(.top, 5)
                     
                     ScrollView {
                         ForEach(Array(zip(quizzoManager.playedQuestions, questionColors())), id: \.0.id) { question, color in
@@ -51,7 +51,7 @@ struct TriviaArchiveView: View {
                             .padding(.horizontal, 20.0)
                         }
                     }
-                    .frame(width: .infinity)
+//                    .frame(width: .infinity)
                 }
             }
         }
