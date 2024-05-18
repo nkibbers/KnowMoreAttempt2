@@ -40,10 +40,7 @@ struct ResultScreen: View {
                             Spacer()
                             
                             Button (action: {
-                                Task.init {
-                                    await manager.fetchQuestion()
-                                }
-                                manager.reachedEnd = false
+                                manager.gameOver()
                                 self.presentationMode.wrappedValue.dismiss()
                             }) {
                                 PrimaryButton(text: "Home")

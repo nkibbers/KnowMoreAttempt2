@@ -69,10 +69,10 @@ struct WelcomeScreen: View {
                                 }
                             }
                             
-                            NavigationLink {
-                                ResultScreen()
-                                    .environmentObject(quizzoManager)
-                            } label: {
+                            NavigationLink (
+                                destination: ResultScreen().environmentObject(quizzoManager)
+                                        .navigationBarBackButtonHidden(true)
+                            ) {
                                 ZStack{
                                     Image("yellowbg")
                                         .resizable()
