@@ -49,7 +49,7 @@ struct leaderboard: View {
                                                     .foregroundColor(.white)
                                                     .kerning(-1)
                                             )
-                                        Image(fontImages[0])
+                                        Image(fontImages[index])
                                             .resizable()
                                             .frame(width: 190, height: 40) // Adjust width to fit rank and player name
                                             .mask(

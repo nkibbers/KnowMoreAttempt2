@@ -9,6 +9,7 @@ import SwiftUI
 
 struct TriviaArchiveView: View {
     @ObservedObject var quizzoManager: QuizzoManager
+    @Environment(\.presentationMode) var presentationMode
     let colors = ["tangerinebg", "lightbluebg", "yellowbg", "purplebg", "orangebg"]
     
     var body: some View {
@@ -54,6 +55,15 @@ struct TriviaArchiveView: View {
 //                    .frame(width: .infinity)
                 }
             }
+            .navigationBarBackButtonHidden(true)
+            .navigationBarItems(
+                leading: Button(action: {
+                    self.presentationMode.wrappedValue.dismiss()
+                }) {
+                    Image(systemName: "chevron.left")
+                        .foregroundColor(Color("KMBlack"))
+                }
+            )
         }
     }
     

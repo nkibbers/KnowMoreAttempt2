@@ -13,16 +13,17 @@ struct ResultCardView: View {
     var body: some View {
         HStack {
             Text(card.title)
-                .font(.system(size: 16, weight: .medium))
+//                .font(.system(size: 16, weight: .medium))
             
             Spacer()
             
             Text("\(card.value)")
-                .font(.system(size: 16, weight: .bold))
+//                .font(.system(size: 16, weight: .bold))
             
         }
         .padding()
-        .background(Color("CardColor"))
+        .font(Font.custom("Louis George Cafe Bold", size: 24))
+//        .background(Color("CardColor"))
         .cornerRadius(8)
     }
 }

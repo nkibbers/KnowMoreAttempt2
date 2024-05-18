@@ -35,7 +35,7 @@ class QuizzoManager: ObservableObject {
     }
     
     func fetchQuestion() async {
-        guard let url = URL(string: "https://opentdb.com/api.php?amount=5")
+        guard let url = URL(string: "https://opentdb.com/api.php?amount=1")
         else { fatalError("Missing URL") }
         
         let urlRequest = URLRequest(url: url)
@@ -66,7 +66,7 @@ class QuizzoManager: ObservableObject {
             index += 1
             setQuestion()
         } else {
-            self.scoreManager.saveScore(name: UserDefaults.standard.string(forKey: "playername") ?? "Guest", score: self.score)
+            self.scoreManager.saveScore(name: UserDefaults.standard.string(forKey: "playerName") ?? "Guest", score: self.score)
             reachedEnd = true
         }
     }

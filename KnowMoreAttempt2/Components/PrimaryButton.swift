@@ -15,6 +15,7 @@ struct PrimaryButton: View {
     var body: some View {
         Text(text)
             .frame(width: 300, height: 30)
+            .font(Font.custom("Louis George Cafe Bold", size: 24))
             .foregroundStyle(Color(.white))
             .padding()
             .padding(.horizontal)

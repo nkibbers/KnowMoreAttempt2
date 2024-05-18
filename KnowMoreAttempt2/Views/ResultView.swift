@@ -10,42 +10,50 @@ import SwiftUI
 struct ResultScreen: View {
     @EnvironmentObject var manager: QuizzoManager
     
+    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         if manager.reachedEnd {
-                
-                VStack(spacing: 30) {
-                    
-                    Image("Result_Illustration")
+            NavigationView {
+                ZStack {
+                    Image("whitebg")
                         .resizable()
-                        .scaledToFit()
-                        .frame(width: 143.78, height: 151.11)
-                    
-                    Text("Results of the Quiz")
-                        .font(.system(size: 22, weight: .bold))
-                        .multilineTextAlignment(.center)
-                    
-                    
-                    VStack {
-                        ResultCardView(card: CardData(title: "TOTAL QUESTIONS", value: manager.length))
-                        ResultCardView(card: CardData(title: "CORRECT QUESTIONS", value: manager.score))
-                    }
-                    
-                    Spacer()
-                    
-                    Button {
-                        Task.init {
-                            await manager.fetchQuestion()
+                        .ignoresSafeArea()
+                    VStack (alignment: .leading) {
+                        Image("blackbg")
+                            .resizable()
+                            .frame(width: 300, height: 200)
+                            .mask( VStack(spacing: -40)
+                               {
+                                Text("result")
+                                    .font(Font.custom("Mont-HeavyDEMO", size: 64))
+                                    .kerning(-1)
+                                }
+                            )
+                        
+                        VStack(spacing: 30) {
+                            
+                            VStack {
+                                ResultCardView(card: CardData(title: "Score: ", value: manager.score))
+                            }
+                            
+                            
+                            Spacer()
+                            
+                            Button (action: {
+                                self.presentationMode.wrappedValue.dismiss()
+                            }) {
+                                PrimaryButton(text: "Home")
+                            }
                         }
-                    } label: {
-                        PrimaryButton(text: "Play Again")
+                        .padding()
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .navigationBarHidden(true)
                     }
+                    .padding(.horizontal, 30)
                 }
-                .padding()
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
-                .background(Color("whitebg"))
-                .navigationBarHidden(true)
-            } else {
+            }                
+        } else {
             QuestionScreen()
                 .environmentObject(manager)
         }

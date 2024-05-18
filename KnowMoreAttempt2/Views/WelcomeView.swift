@@ -48,9 +48,11 @@ struct WelcomeScreen: View {
                         
                         LazyVGrid(columns: Array(repeating: GridItem(.flexible(), spacing: 0), count: 2), spacing: 0) {
                             
-                            Button(action: {
-                                //                            isLeaderboardPresented.toggle()
-                            }) {
+                            NavigationLink(
+                                destination: leaderboard(highScoreViewManager: HighScoreViewModel())
+                                    .navigationBarBackButtonHidden(true)
+                            )
+                            {
                                 ZStack {
                                     Image("purplebg")
                                         .resizable()
@@ -89,7 +91,10 @@ struct WelcomeScreen: View {
                                 
                             }
                             
-                            NavigationLink(destination: TriviaArchiveView(quizzoManager: quizzoManager))
+                            NavigationLink(
+                                destination: TriviaArchiveView(quizzoManager: quizzoManager)
+                                    .navigationBarBackButtonHidden(true)
+                            )
                             {
 
                                 ZStack{
@@ -114,16 +119,17 @@ struct WelcomeScreen: View {
                                 Image("greenbg")
                                     .resizable()
                                     .frame(width: 200, height: 200)
-                                VStack {
+                                ZStack {
                                     Image("purplebg")
                                         .resizable()
                                         .frame(width: 200, height: 40)
                                         .mask(
-                                            Text("score")
+                                            Text("high score")
                                                 .font(Font.custom("Mont-HeavyDEMO", size: 38))
                                                 .foregroundColor(.white)
                                                 .kerning(-1)
                                         )
+                                    
                                     Image("purplebg")
                                         .resizable()
                                         .frame(width: 200, height: 40)
@@ -133,6 +139,7 @@ struct WelcomeScreen: View {
                                                 .foregroundColor(.white)
                                                 .kerning(-1)
                                         )
+                                        .padding(.top, 88)
                                 }
                             }
                             
