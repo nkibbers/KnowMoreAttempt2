@@ -13,7 +13,7 @@ class QuizzoManager: ObservableObject {
     private(set) var trivia: [Trivia.Result] = []
     @Published private(set) var length = 0
     @Published private(set) var index = 0
-    @Published private(set) var reachedEnd = false
+    @Published var reachedEnd = false
     @Published private(set) var answerSelected = false
     @Published private(set) var question: AttributedString = ""
     @Published private(set) var answerChoices: [Answer] = []

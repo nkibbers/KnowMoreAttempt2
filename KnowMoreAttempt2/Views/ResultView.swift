@@ -36,11 +36,14 @@ struct ResultScreen: View {
                             VStack {
                                 ResultCardView(card: CardData(title: "Score: ", value: manager.score))
                             }
-                            
-                            
+                    
                             Spacer()
                             
                             Button (action: {
+                                Task.init {
+                                    await manager.fetchQuestion()
+                                }
+                                manager.reachedEnd = false
                                 self.presentationMode.wrappedValue.dismiss()
                             }) {
                                 PrimaryButton(text: "Home")
